@@ -1,6 +1,8 @@
 # BaralhoTcg
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.6.
+Simula um baralho, onde o usuario pode adicionar seu nome e ao entrar na tela das cartas é posivel selecionar as cartas, já na tela do baralho o úsuario pode visualizar seu baralho e pode escluir as cartas individualmente.
+
+Projeto gerado com [Angular CLI](https://github.com/angular/angular-cli) version 16.1.6.
 
 ## Development server
 
