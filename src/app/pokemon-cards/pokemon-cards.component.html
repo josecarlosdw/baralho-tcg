@@ -1,0 +1,21 @@
+<div class="grid grid-cols-3 gap-4">
+
+    <div>
+        <h2>Bem-vindo, {{ username }}!</h2>
+        
+    </div>
+
+       <!-- Exibição da lista de Cartas -->
+  <div *ngIf="cards.length > 0">
+    <h2>Lista de Cartas</h2>
+    <div class="baralho-container">
+    <div *ngFor="let card of cards" class="bg-white rounded-lg shadow-md p-4 mb-4 space-x-4 carta" style="margin-bottom:15px">
+        <img [src]="card.images.small" alt="{{ card.name }}" class="w-full h-auto">
+        <h3 class="text-lg font-semibold">{{ card.name }}</h3>
+      <button class="mt-2 px-4 py-2 bg-blue-500 text-white rounded-md" class="btn-baralho" (click)="adicionarAoBaralho(card)">
+        Adicionar ao Baralho
+      </button>
+    </div>
+  </div>
+  </div>
+</div>

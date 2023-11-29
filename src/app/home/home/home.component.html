@@ -1,0 +1,23 @@
+<div>
+    <h1>Baralho TCG</h1>
+  
+    <form (ngSubmit)="onSubmit()">
+      <label for="username">Digite seu nome:</label>
+      <input type="text" id="username" style="margin:5px" name="username" [(ngModel)]="username" required>
+      <button type="submit" style="background-color: #000; color:#fff">Entrar</button>
+    </form>
+    <mat-divider></mat-divider>
+    
+<div *ngIf="cartasSelecionadas.length > 0">
+
+  <h2>baralho de {{username}}</h2>
+  
+  <div class="baralho-container">
+  <div *ngFor="let baralho of cartasSelecionadas" class="bg-white rounded-lg shadow-md p-4 mb-4 carta">
+    <img [src]="baralho.images.small" alt="{{ baralho.name }}" class="w-full h-auto">
+    <h3 class="text-lg font-semibold">{{ baralho.name }}</h3>   
+    <button (click)="removerDoBaralho(baralho)" class="btnRemover">Remover do Baralho</button>
+  </div>
+</div>
+</div>
+  </div>

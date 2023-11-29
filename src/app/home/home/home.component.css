@@ -1,0 +1,42 @@
+mat-divider {    
+    margin: 20px 0px !important;    
+    width: 800px !important;
+}
+
+.baralho-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .carta {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    width: 120px;
+    height: 180px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carta img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    margin-bottom: 8px;
+  }
+  
+  .carta h3 {
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+    padding: 10px;
+  }
+
+  .btnRemover {
+    background-color: #f00 !important;
+    color: #fff;
+    border: 0px;
+    border-radius:5px;
+    padding: 5px;
+  }
